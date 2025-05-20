@@ -1,8 +1,11 @@
-const h1 = document.getElementById('h1')
-var clicks = 0
-let clickes = clicks.value
-let click = Number(clicks.value)
+let h1 = document.getElementById('h1')
+let clicks = 0
 
 function addclick() {
-    h1.innerHTML = `Contador: ${click + 1}`
+    clicks++
+    h1.innerHTML = `Contador: ${clicks}`
+}
+
+function resetclick() {
+    h1.innerHTML = `Contador: 0`
 }
